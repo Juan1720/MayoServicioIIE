@@ -45,6 +45,12 @@ public class Proveedor {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
+	public Productos getProductos() {
+		return productos;
+	}
+	public void setProductos(Productos productos) {
+		this.productos = productos;
+	}
 	
 	
 

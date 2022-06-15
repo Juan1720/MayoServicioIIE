@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.idat.MayoServicioPrueba.model.Productos;
 import com.idat.MayoServicioPrueba.model.Proveedor;
 import com.idat.MayoServicioPrueba.service.ProveedorService;
 

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.idat.MayoServicioPrueba.model.Item;
-import com.idat.MayoServicioPrueba.model.Productos;
 import com.idat.MayoServicioPrueba.service.ItemService;
 
 @Controller
