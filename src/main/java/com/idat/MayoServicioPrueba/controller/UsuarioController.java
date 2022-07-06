@@ -10,23 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.idat.MayoServicioPrueba.dto.UsuarioDTORequest;
 import com.idat.MayoServicioPrueba.dto.UsuarioDTOResponse;
-import com.idat.MayoServicioPrueba.security.JWTUtil;
 import com.idat.MayoServicioPrueba.security.UserDetailService;
 
 @RestController
 public class UsuarioController {
 	
-	@Autowired
-	private JWTUtil util;
 	
 	@Autowired
 	private UserDetailService service;
 
-	@RequestMapping(path = "/crearToken", method = RequestMethod.POST)
-	public ResponseEntity<?> crearToken(@RequestBody UsuarioDTORequest request) {
-		
-		UserDetails user = service.loadUserByUsername(request.getUsuario());
-		return ResponseEntity.ok(new UsuarioDTOResponse(util.generateToken(user.getUsername())));
-	}
+//	@RequestMapping(path = "/crearToken", method = RequestMethod.POST)
+//	public ResponseEntity<?> crearToken(@RequestBody UsuarioDTORequest request) {
+//		
+//		UserDetails user = service.loadUserByUsername(request.getUsuario());
+//		return ResponseEntity.ok(new UsuarioDTOResponse(util.generateToken(user.getUsername())));
+//	}
 
 }
